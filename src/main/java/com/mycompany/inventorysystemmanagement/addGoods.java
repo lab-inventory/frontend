@@ -4,6 +4,13 @@
  */
 package com.mycompany.inventorysystemmanagement;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.swing.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  *
  * @author TUOYINTIR ABEL. Y. J
@@ -351,9 +358,9 @@ public class addGoods extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-         issue_good issue_good = new issue_good();
+        issue_good issue_good = new issue_good();
         issue_good.setVisible(false);
-         addGoods addGoods = new addGoods();
+        addGoods addGoods = new addGoods();
         addGoods.setVisible(false);
         Dashboard dashboard = new Dashboard();
         dashboard.setVisible(false);
@@ -371,8 +378,9 @@ public class addGoods extends javax.swing.JFrame {
     }//GEN-LAST:event_PriceFieldActionPerformed
 
     private void addButtomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtomActionPerformed
-        // TODO add your handling code here
-
+        String productName = productNamefield.getText();
+        String description = DescriptionTextfield.getText();
+        String date = DateDateField.getText();
     }//GEN-LAST:event_addButtomActionPerformed
 
     private void productNamefieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productNamefieldActionPerformed
@@ -398,9 +406,9 @@ public class addGoods extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       issue_good issue_good = new issue_good();
+        issue_good issue_good = new issue_good();
         issue_good.setVisible(false);
-         addGoods addGoods = new addGoods();
+        addGoods addGoods = new addGoods();
         addGoods.setVisible(false);
         Dashboard dashboard = new Dashboard();
         dashboard.setVisible(true);
@@ -417,7 +425,7 @@ public class addGoods extends javax.swing.JFrame {
         // TODO add your handling code here:
         issue_good issue_good = new issue_good();
         issue_good.setVisible(false);
-         addGoods addGoods = new addGoods();
+        addGoods addGoods = new addGoods();
         addGoods.setVisible(false);
         ViewVendors vv = new ViewVendors();
         vv.setVisible(true);
